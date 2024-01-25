@@ -1,7 +1,7 @@
 name: 'Di hola'
 description: 'Saluda desde Docker python.'
 inputs:
-	nombre:
+  nombre:
     required: false
     type: string
     default: John Doe
