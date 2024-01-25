@@ -7,8 +7,8 @@ inputs:
     default: John Doe
     description: "Tu nombre para el saludo"
 outputs:
-	saludo:
-		description: Te saludamos por tu nombre
+  saludo:
+    description: Te saludamos por tu nombre
 runs:
   using: 'docker'
   image: 'Dockerfile' # 'docker://debian:stretch-slim', si quisieramos apuntar a una imagen de dockerhub
