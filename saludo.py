@@ -6,7 +6,8 @@ def set_github_action_output(output_name, output_value):
     f.close()
 
 def run():
-    nombre = os.getenv('INPUT_nombre', default="John Doe")
+    # nombre = os.getenv('INPUT_NOMBRE', default="John Doe")
+    nombre = 'Paco'
     set_github_action_output('saludo', f'Hola, {nombre}!')
 
 if __name__ == '__main__':
