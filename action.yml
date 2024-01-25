@@ -12,5 +12,3 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile' # 'docker://debian:stretch-slim', si quisieramos apuntar a una imagen de dockerhub
-  args:
-    - ${{ inputs.nombre }}
