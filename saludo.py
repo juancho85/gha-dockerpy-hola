@@ -1,9 +1,8 @@
 import os
 
 def set_github_action_output(output_name, output_value):
-    f = open(os.path.abspath(os.environ["GITHUB_OUTPUT"]), "a")
-    f.write(f'{output_name}={output_value}')
-    f.close()
+    with open(os.path.abspath(os.environ["GITHUB_OUTPUT"]), "a") as output:
+        print(f'{output_name}={output_value}', file=output)
 
 def run():
     nombre = os.getenv('INPUT_NOMBRE', default="John Doe")
